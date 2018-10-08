@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<!-- 配置类和表结构的映射 -->
+	<class name="Bean.JueseBean" table="JueseBean">
+		<!-- 配置id 
+			见到name属性，JavaBean的属性
+			见到column属性，是表结构的字段
+		-->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"/>
+		</id>
+		
+		<!-- 配置其他的属性 -->
+		<property name="juese" column="juese"/>
+		<property name="quanxian" column="quanxian"/>
+		<property name="wangluo" column="wangluo"/>
+		<property name="xuqiu" column="xuqiu"/>
+		<property name="upmima" column="upmima"/>
+		<property name="sel" column="sel"/>
+		<property name="addneed" column="addneed"/>
+		<property name="dealneed" column="dealneed"/>
+		<property name="userinfo" column="userinfo"/>
+		<property name="weishenhe" column="weishenhe"/>
+		<property name="tongguo" column="tongguo"/>
+		<property name="tuihui" column="tuihui"/>
+		
+	
+		
+	</class>
+	
+</hibernate-mapping>    

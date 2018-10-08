@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<!-- 配置类和表结构的映射 -->
+	<class name="Bean.UserBean" table="UserBean">
+		<!-- 配置id 
+			见到name属性，JavaBean的属性
+			见到column属性，是表结构的字段
+		-->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"/>
+		</id>
+		
+		<!-- 配置其他的属性 -->
+		<property name="username" column="username"/>
+		<property name="password" column="password"/>
+		<property name="phnumber" column="phnumber"/>
+		<property name="depart" column="depart"/>
+		<property name="truename" column="truename"/>
+		<property name="city" column="city"/>
+		<property name="director" column="director"/>
+		<property name="hangye" column="hangye"/>
+		<property name="education" column="education"/>
+		<property name="zhicheng" column="zhicheng"/>
+		<property name="address" column="address"/>
+		<property name="e_code" column="e_code"/>
+		<property name="dianhua" column="dianhua"/>
+		<property name="email" column="email"/>
+		<property name="cardid" column="cardid"/>
+		<property name="jigoushuxing" column="jigoushuxing"/>
+		<property name="jigoujianjie" column="jigoujianjie"/>
+		<property name="departname" column="departname"/>
+		<property name="wangzhi" column="wangzhi"/>
+		<property name="faren" column="faren"/>
+		<property name="chuanzhen" column="chuanzhen"/>
+		<property name="juese" column="juese"/>
+	
+		
+	</class>
+	
+</hibernate-mapping>    

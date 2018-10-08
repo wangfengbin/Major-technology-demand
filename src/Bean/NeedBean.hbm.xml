@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<!-- 配置类和表结构的映射 -->
+	<class name="Bean.UserBean" table="UserBean">
+		<!-- 配置id 
+			见到name属性，JavaBean的属性
+			见到column属性，是表结构的字段
+		-->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"/>
+		</id>
+		
+		<!-- 配置其他的属性 -->
+		<property name="userid" column="userid"/>
+		<property name="name" column="name"/>
+		<property name="descrpt" column="descrpt"/>
+		<property name="type" column="type"/>
+		<property name="moshi" column="moshi"/>
+		<property name="money" column="money"/>
+		<property name="status" column="status"/>
+		<property name="status1" column="status1"/>
+		<property name="date" column="date"/>
+		<property name="ping" column="ping"/>
+		<property name="qiannian" column="qiannian"/>
+		<property name="hounian" column="hounian"/>
+		<property name="guanjian1" column="guanjian1"/>
+		<property name="guanjian2" column="guanjian2"/>
+		<property name="guanjian3" column="guanjian3"/>
+		<property name="guanjian4" column="guanjian4"/>
+		<property name="guanjian5" column="guanjian5"/>
+		<property name="hezuo" column="hezuo"/>
+		<property name="xueke" column="xueke"/>
+		<property name="twoxueke" column="twoxueke"/>
+		<property name=lingyu column="lingyu"/>
+		<property name="yingyong" column="yingyong"/>
+		<property name="twohangye" column="twohangye"/>
+		
+		
+	</class>
+	
+</hibernate-mapping>    
